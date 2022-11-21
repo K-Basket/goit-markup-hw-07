@@ -1,0 +1,19 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $colorBgPrimy;
+
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__item {
+  &:not(:last-child) {
+    margin-right: 70px;
+  }
+  &:nth-child(3) {
+    margin-left: auto;
+  }
+}

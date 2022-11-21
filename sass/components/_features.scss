@@ -1,0 +1,40 @@
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: calc(-1 * $marginItem);
+  margin-bottom: calc(-1 * $marginItem);
+}
+
+.features__item {
+  margin-right: $marginItem;
+  margin-bottom: $marginItem;
+
+  flex-basis: calc(100% / 4 - $marginItem);
+  &:not(:last-child) {
+    margin-right: $marginItem;
+  }
+}
+
+.features__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: $marginItem;
+  height: 120px;
+
+  background-color: $colorBgTerty;
+}
+
+.features-title-second {
+  margin-bottom: 10px;
+  text-align: left;
+  color: $colorTextSecond;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.7143;
+  letter-spacing: 0.03em;
+}
