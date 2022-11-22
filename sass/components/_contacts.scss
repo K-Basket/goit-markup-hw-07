@@ -2,12 +2,12 @@
   display: flex;
   margin-left: auto;
   @extend %fontPropertiesHeader;
-  color: $colorTextMain;
+  color: var(--colorTextMain);
 }
 
 .contacts-header__item {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: $marginItem;
   }
 }
 
@@ -16,15 +16,14 @@
   align-items: center;
 
   color: currentColor;
-  fill: $colorTextMain;
+  fill: var(--colorTextMain);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: color $transition, fill $transition;
 
   &:hover,
   &:focus {
-    color: $colorAccent;
-    fill: $colorAccent;
+    color: var(--colorAccent);
+    fill: var(--colorAccent);
   }
 }
 
@@ -38,7 +37,7 @@
 
 .contacts-footer__item {
   &:first-child {
-    color: $colorLight;
+    color: var(--colorLight);
   }
 
   &:not(:last-child) {

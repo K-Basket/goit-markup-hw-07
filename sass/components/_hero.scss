@@ -6,19 +6,20 @@
 
   text-align: center;
 
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero-bg.jpeg");
+  @include gradientBgImage(
+    bottom, 
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4), 
+    url("../images/hero-bg.jpeg"));
+
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #c4c4c4;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: $marginItem;
 
     font-weight: 900;
     font-size: 44px;
@@ -26,6 +27,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: $colorLight;
+    color: var(--colorLight);
   }
 }

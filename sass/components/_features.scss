@@ -24,13 +24,13 @@
   margin-bottom: $marginItem;
   height: 120px;
 
-  background-color: $colorBgTerty;
+  background-color: var(--colorBgTerty);
 }
 
 .features-title-second {
   margin-bottom: 10px;
   text-align: left;
-  color: $colorTextSecond;
+  color: var(--colorTextSecond);
 }
 
 .features__text {

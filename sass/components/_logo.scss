@@ -15,13 +15,13 @@
   }
 
   &__primy-color {
-    color: $colorAccent;
+    color: var(--colorAccent);
   }
   &__secondy-color {
-    color: $colorDark;
+    color: var(--colorDark);
   }
 }
 
 .logo-logo__secondy-color {
-  color: $colorLight;
+  color: var(--colorLight);
 }

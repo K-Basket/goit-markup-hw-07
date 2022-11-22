@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: $colorTextMain;
-  background-color: $colorLight;
+  color: var(--colorTextMain);
+  background-color: var(--colorLight);
 }
 
 button {
@@ -35,7 +35,7 @@ button {
   line-height: 1.1666;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $colorTextSecond;
+  color: var(--colorTextSecond);
 }
 
 .title-second {

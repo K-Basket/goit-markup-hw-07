@@ -11,7 +11,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: $colorTextSecond;
+  color: var(--colorTextSecond);
 }
 
 .form__item {
@@ -30,8 +30,8 @@
   &:focus-within .form__icon,
   &:hover .form__input,
   &:hover .form__icon {
-    fill: $colorAccent;
-    border-color: $colorAccent;
+    fill: var(--colorAccent);
+    border-color: var(--colorAccent);
   }
 }
 
@@ -42,7 +42,7 @@
   line-height: 1.1666;
   letter-spacing: 0.01em;
 
-  color: $colorTextMain;
+  color: var(--colorTextMain);
 }
 
 .form__box {
@@ -60,8 +60,7 @@
   line-height: 1.1666;
   letter-spacing: 0.01em;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  @include bordered(rgba(33, 33, 33, 0.2));
 
   outline: none;
   transition: border $transition;
@@ -72,7 +71,7 @@
   top: 50%;
   left: 12px;
 
-  fill: $colorTextSecond;
+  fill: var(--colorTextSecond);
 
   transform: translateY(-50%);
   transition: fill $transition;
@@ -96,12 +95,12 @@
   line-height: 1.7143;
   letter-spacing: 0.03em;
 
-  color: $colorTextMain;
+  color: var(--colorTextMain);
 
   &:focus-within .checkbox__icon,
   &:hover .checkbox__icon {
-    fill: $colorAccent;
-    border-color: $colorAccent;
+    fill: var(--colorAccent);
+    border-color: var(--colorAccent);
   }
 }
 
@@ -118,11 +117,11 @@
   @extend %visuallyHidden;
 
   &:checked + .checkbox__icon {
-    border-color: $colorAccent;
+    border-color: var(--colorAccent);
     background-image: url("../images/icon-check.svg");
     background-size: contain;
     background-origin: border-box;
-    background-color: $colorAccent;
+    background-color: var(--colorAccent);
   }
 }
 
@@ -133,7 +132,7 @@
   width: 16px;
   height: 15px;
 
-  border: 2px solid $colorDark;
+  border: 2px solid var(--colorDark);
   border-radius: 2px;
 
   transition: background-image $transition, background-color $transition,
@@ -142,7 +141,7 @@
 
 .checkbox__link {
   text-decoration-line: underline;
-  color: $colorAccent;
+  color: var(--colorAccent);
 }
 
 // Footer form
@@ -162,10 +161,11 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
 
-  color: $colorLight;
-  background-color: $colorBgPrimy;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+  color: var(--colorLight);
+  background-color: var(--colorBgPrimy);
+  
+  @include bordered(rgba(255, 255, 255, 0.3));
+  
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: none;
 

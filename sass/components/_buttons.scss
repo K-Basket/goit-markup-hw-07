@@ -5,7 +5,7 @@
 
   &:hover,
   &:focus {
-    background-color: $colorAccentSecond;
+    background-color: var(--colorAccentSecond);
   }
 }
 
@@ -16,7 +16,7 @@
 
   & .icon-telegram {
     margin-left: 10px;
-    fill: $colorLight;
+    fill: var(--colorLight);
   }
 }
 
@@ -26,7 +26,7 @@
 
   &:hover,
   &:focus {
-    background-color: $colorAccentSecond;
+    background-color: var(--colorAccentSecond);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
@@ -47,17 +47,17 @@
   width: 30px;
   height: 30px;
 
+  @include bordered(rgba(0, 0, 0, 0.1));
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: $colorLight;
+  background-color: var(--colorLight);
 
   &:hover .close-button__icon,
   &:focus .close-button__icon {
-    fill: $colorAccent;
+    fill: var(--colorAccent);
   }
 }
 
 .close-button__icon {
-  fill: $colorDark;
-  transition: fill $transition;
+  fill: var(--colorDark);
+  transition: fill var(--transition);
 }
